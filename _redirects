@@ -1,0 +1,16 @@
+# Cloudflare Pages redirects and rewrites
+
+# Redirect all 404s to the main page (single page application behavior)
+/* /index.html 200
+
+# Optional: Redirect www to non-www (uncomment if needed)
+# https://www.hit-team.com/* https://hit-team.com/:splat 301!
+
+# Optional: Force HTTPS (usually handled by Cloudflare automatically)
+# http://hit-team.com/* https://hit-team.com/:splat 301!
+
+# Optional: Redirect old paths to new sections (examples)
+# /services.html /index.html#services 301
+# /contact.html /index.html#contact 301
+# /about.html /index.html#approach 301
+
